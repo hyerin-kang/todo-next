@@ -7,12 +7,14 @@ export interface Todo {
 
 const BASE_URL = "http://localhost:4000/todos";
 
+//일기
 export const fetchTodos = async (): Promise<Todo[]> => {
   const res = await fetch(BASE_URL);
   if (!res.ok) throw new Error("투두 데이터 불러오기 실패");
   return res.json();
 };
 
+//추가
 export const addTodo = async (newTodo: Todo): Promise<void> => {
   const res = await fetch(BASE_URL, {
     method: "POST",
@@ -20,4 +22,16 @@ export const addTodo = async (newTodo: Todo): Promise<void> => {
     body: JSON.stringify(newTodo),
   });
   if (!res.ok) throw new Error("할일 추가 실패");
+  return res.json();
+};
+
+//수정
+export const updateTodo = async (updateTodo: Todo) => {
+  const res = await fetch(`${BASE_URL}/${updateTodo.id}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(updateTodo),
+  });
+  if (!res.ok) throw new Error("할일 수정 실패");
+  return res.json();
 };
