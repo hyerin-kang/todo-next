@@ -35,3 +35,12 @@ export const updateTodo = async (updateTodo: Todo) => {
   if (!res.ok) throw new Error("할일 수정 실패");
   return res.json();
 };
+
+//삭제
+export const deleteTodo = async (id: string) => {
+  const res = await fetch(`${BASE_URL}/${id}`, {
+    method: "DELETE",
+  });
+  if (!res.ok) throw new Error("할일 삭제 실패");
+  return res.json();
+};

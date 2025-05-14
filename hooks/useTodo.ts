@@ -1,5 +1,11 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { fetchTodos, addTodo, Todo, updateTodo } from "@/api/todoApi";
+import {
+  fetchTodos,
+  addTodo,
+  Todo,
+  updateTodo,
+  deleteTodo,
+} from "@/api/todoApi";
 
 // 투두 리스트 가져오기
 export const useGetTodo = () => {
@@ -26,6 +32,17 @@ export const useUpdateTodo = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: updateTodo,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
+    },
+  });
+};
+
+//투두삭제
+export const useDeleteTodo = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: deleteTodo,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["todos"] });
     },
