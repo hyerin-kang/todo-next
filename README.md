@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Todo Next.js App
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React Query](https://img.shields.io/badge/React_Query-FF4154?logo=reactquery&logoColor=white)](https://tanstack.com/query)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
 
-First, run the development server:
+> **Next.js** 기반의 심플하고 직관적인 Todo 애플리케이션입니다.  
+> **React**, **TypeScript**, **React Query**, **Tailwind CSS**, **JSON Server** 등 현대적인 프론트엔드 스택으로 구성되어 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ 주요 기능
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ **할 일 추가**: 새로운 할 일을 입력하고 리스트에 추가할 수 있어요.
+- 📋 **할 일 목록 보기**: 전체 / 완료 / 미완료 상태로 필터링이 가능합니다.
+- 🔄 **할 일 상태 변경**: 완료 또는 미완료 상태를 토글할 수 있어요.
+- ❌ **할 일 삭제**: 불필요한 할 일을 삭제할 수 있습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ 기술 스택
 
-To learn more about Next.js, take a look at the following resources:
+| 항목 | 사용 기술 |
+|------|-----------|
+| **프레임워크** | [Next.js](https://nextjs.org) |
+| **언어** | [TypeScript](https://www.typescriptlang.org/) |
+| **상태 관리** | [React Query](https://tanstack.com/query/latest) |
+| **스타일링** | [Tailwind CSS](https://tailwindcss.com) |
+| **API** | [JSON Server](https://github.com/typicode/json-server) (Mock API) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
