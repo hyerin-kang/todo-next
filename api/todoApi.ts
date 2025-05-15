@@ -5,7 +5,7 @@ export interface Todo {
   completed: boolean;
 }
 
-const BASE_URL = "http://localhost:4000/todos";
+const BASE_URL = "https://grape-ethereal-patient.glitch.me";
 
 //일기
 export const fetchTodos = async (): Promise<Todo[]> => {
