@@ -29,12 +29,15 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <header className="bg-blue-400 text-white font-extrabold h-10 flex items-center justify-center">
+          <header className="bg-blue-400 text-white font-extrabold text-xl h-15 flex items-center justify-center">
             TODOLIST
           </header>
-          <main className="p-4 bg-blue-100 min-h-[calc(100vh-40px)]">
+          <main className="p-4 bg-blue-100 min-h-[calc(100vh-100px)]">
             {children}
           </main>
+          <footer className="h-10 flex items-center justify-center bg-blue-300 text-white">
+            © 2025 KANG HYE RIN. All rights reserved.
+          </footer>
         </body>
       </TodoProvider>
     </html>

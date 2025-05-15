@@ -3,7 +3,7 @@ import TodoPage from "./todo/page";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-2xl mx-auto">
       <AddTodo />
       <TodoPage />
     </div>
