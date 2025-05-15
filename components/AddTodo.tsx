@@ -27,7 +27,7 @@ export const AddTodo = () => {
       />
       <button
         type="submit"
-        className="cursor-pointer p-2 rounded-md bg-black text-white"
+        className="cursor-pointer p-2 rounded-md bg-blue-500 text-white"
       >
         추가
       </button>

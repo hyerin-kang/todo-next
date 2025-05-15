@@ -1,13 +1,8 @@
 {
   "todos": [
     {
-      "id": "63a9e138-bbf9-4ef1-a3ff-92f2d65e389c",
-      "title": "할일 추가",
-      "completed": false
-    },
-    {
-      "id": "e2f68eb3-ae0f-42cb-b922-2452cfcb7b83",
-      "title": "할일 1",
+      "id": "bda8f74f-fc8c-44cb-b66e-9b341fe5e6a0",
+      "title": "할일1",
       "completed": true
     }
   ]
